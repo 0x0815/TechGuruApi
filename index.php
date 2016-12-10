@@ -93,19 +93,16 @@ function backupDB(){
 	    while ($obj = $result->fetch_object()) {
 	        printf ("%s (%s)\n", $obj->Name, $obj->CountryCode);
 	    }
-	
+	    
+	    
 	    /* free result set */
 	    $result->close();
 	}
-
 	
 	$headers = 
 	$query = "SELECT * FROM `repaircases`";
 
- 
-
 }
-
 
 switch($_GET['q1']){
 	case 'add':
