@@ -79,6 +79,9 @@ function addToDatabase($array) {
 	}
 }
 
+//testPublish git+autoupload
+//blablablabla
+
 function backupDB(){
 	$mysqli = new mysqli("localhost", "repairdata", "m#42Vqc7", "repairdata");
 	
@@ -93,7 +96,6 @@ function backupDB(){
 	    while ($obj = $result->fetch_object()) {
 	        printf ("%s (%s)\n", $obj->Name, $obj->CountryCode);
 	    }
-	    
 	    
 	    /* free result set */
 	    $result->close();
